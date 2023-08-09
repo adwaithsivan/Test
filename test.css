@@ -1,0 +1,784 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --h1-font: 4rem;
+    --h2-font: 3rem;
+    --h3-font: 2rem;
+    --p-font: 20px;
+
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    top: 0;
+    right: 0;
+    align-items: center;
+    z-index: 1000;
+    position: fixed;
+    background-color: #ff9900;
+    padding: 20px 10%;
+    transition: all .50s;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo span {
+    font-size: 22px;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+}
+#logo-desc{
+    font-size: 14px;
+    line-height: 5px;
+    font-weight: 400;
+}
+.navbar {
+    display: flex;
+}
+
+.navbar a {
+    padding: 10px 25px;
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.navbar a:hover {
+    color: #48cae4;
+    transition: all 0.8s ease;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 240px;
+    box-shadow: 1px 1px 15px rgb(80, 80, 80);
+    background: none;
+}
+
+.search-bar input {
+    height: 100%;
+    width: 200px;
+    border: none;
+    outline: none;
+    padding: 0 10px;
+    font-size: 16px;
+    background: #ffc300;
+}
+
+.search-bar input::placeholder {
+    color: white;
+}
+
+.search-bar #search-icon {
+    height: 100%;
+    width: 40px;
+    text-align: center;
+    margin-top: 7px;
+    background: #48cae4;
+    padding: 2px;
+    cursor: pointer;
+}
+
+#menu-icon {
+    margin-left: 5px;
+    cursor: pointer;
+    font-size: 30px;
+    color: white;
+    z-index: 10001;
+    display: none;
+}
+
+
+.home {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #ffc300;
+    padding: 90px 10%;
+
+}
+
+.home-text {
+    color: white;
+}
+
+.home-text h1 {
+    font-size: var(--h1-font);
+}
+
+.home-text p {
+    font-size: var(--p-font);
+}
+
+.contact {
+    background-color: #48cae4;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    font-size: var(--p-font);
+    cursor: pointer;
+}
+
+.service {
+    background: transparent;
+    padding: 10px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: var(--p-font);
+    margin-left: 2rem;
+    cursor: pointer;
+}
+
+.home button {
+    margin-top: 2rem;
+}
+
+#img {
+    height: 30rem;
+}
+
+.section-2 {
+    background-color: white;
+    position: relative;
+    width: 100%;
+    display: grid;
+    margin-top: 5rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+    color: black;
+    padding: 90px 10%;
+
+}
+
+.text-area h2 {
+    font-size: var(--h2-font);
+    color: black;
+}
+
+.text-area p {
+    color: black;
+    font-size: var(--p-font);
+}
+
+.service-2 {
+    background: #ffc300;
+    padding: 10px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-top: 2rem;
+    font-size: var(--p-font);
+    cursor: pointer;
+
+}
+
+#img-wrapper {
+    position: relative;
+}
+
+#overlay {
+    position: absolute;
+    width: 34rem;
+    height: 25.5rem;
+    right: 1;
+    top: 0;
+    bottom: 0;
+    background: #ffc300;
+    opacity: .5;
+}
+
+.section-3 {
+    width: 100%;
+    height: 100vh;
+    background-color: #ffc300;
+    align-items: center;
+    color: white;
+    padding: 90px 5%;
+    position: relative;
+    display: grid;
+}
+
+.card {
+    text-align: center;
+    height: 20rem;
+    width: 22rem;
+}
+
+.section-heading {
+    font-size: 32px;
+    text-align: center;
+}
+
+.section-3 p {
+    font-size: 18px;
+}
+
+#title-desc {
+    padding: 0 22%;
+}
+
+.card-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+.column .card {
+    flex: 1;
+    margin: 62px 54px;
+    width: 29rem;
+
+}
+
+.desc h3 {
+    font-size: 24px;
+}
+
+.column .card img {
+    width: 100%;
+    border: 5px solid white;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.4);
+}
+
+.section-4 {
+    background-color: white;
+    position: relative;
+    width: 100%;
+    display: grid;
+    margin-top: 5rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+    color: black;
+    padding: 90px 10%;
+
+}
+
+.text-area h2 {
+    font-size: var(--h2-font);
+    color: black;
+}
+
+.text-area p {
+    color: black;
+    font-size: var(--p-font);
+}
+
+.service-2 {
+    background: #ffc300;
+    padding: 10px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-top: 2rem;
+    font-size: var(--p-font);
+
+}
+
+#img-wrapper {
+    position: relative;
+}
+
+#overlay {
+    position: absolute;
+    width: 34rem;
+    height: 25.5rem;
+    right: 1;
+    top: 0;
+    bottom: 0;
+    background: #ffc300;
+    opacity: .5;
+}
+
+.section-5 {
+    width: 100%;
+    height: 100vh;
+    background-color: #ffc300;
+    align-items: center;
+    color: white;
+    padding: 90px 5%;
+    position: relative;
+    display: grid;
+}
+
+.section-5 p {
+    font-size: 18px;
+}
+
+.price-button {
+    padding: 10px 40px;
+    background-color: #48cae4;
+    color: white;
+    font-size: 18px;
+    border-radius: 50px;
+}
+
+.section-6 {
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    color: black;
+    padding: 90px 5%;
+    position: relative;
+    display: grid;
+}
+
+.doctor-card {
+    text-align: center;
+}
+
+.section-6 p {
+    font-size: 18px;
+}
+
+#doc-3 {
+    width: 65%;
+}
+
+.column .doctor-card .img {
+    width: 60%;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.2);
+
+}
+
+.column .doctor-card {
+    flex: 1;
+    margin: 62px 54px;
+}
+
+.doctor-card-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    background-color: #ffc300;
+    border-radius: 50%;
+    padding: 2px;
+    margin-left: 5px;
+}
+
+.section-7 {
+    background: no-repeat url(https://www.banfield.com/-/media/Project/Banfield/Main/en/general/Callout/Feature/Banfield-pet-hospital.jpg);
+    height: 50vh;
+    background-size: 100%;
+    background-position-y: -15rem;
+    position: relative;
+}
+
+#overlay-banner {
+    opacity: 0.75;
+    width: 100%;
+    height: 50vh;
+    background-color: rgb(226, 173, 0);
+    position: relative;
+    z-index: 4;
+}
+
+.statics {
+    z-index: 5;
+    opacity: 1;
+    position: absolute;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    font-weight: 600;
+    column-gap: 15rem;
+    padding: 12rem 20%;
+
+}
+
+.stat-1 {
+    text-align: center;
+}
+
+.stat-1 .count {
+    font-size: 24px;
+}
+
+.section-8 {
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    color: black;
+    padding: 90px 5%;
+    position: relative;
+    display: grid;
+}
+
+.section-8 .section8-heading {
+    font-size: 32px;
+    text-align: center;
+}
+
+.section-8 .decription {
+    font-size: 18px;
+    padding: 0 22%
+}
+
+.card-container-2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.column-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+
+}
+
+.column-2 .card-2 {
+    flex: 1;
+    margin: 62px 54px;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.4);
+    width: 29rem;
+
+}
+
+.column-2 .card-2 img {
+    width: 100%;
+    height: auto;
+}
+
+#card-heading {
+    padding: 10px;
+    font-size: 24px;
+    color: black;
+    line-height: 25px;
+}
+
+#date {
+
+    line-height: 5px;
+    padding: 10px;
+    color: cyan;
+    font-size: 14px;
+}
+
+#card-decription {
+    font-size: 14px;
+    padding: 10px;
+}
+
+#read-more {
+    color: cyan;
+    font: 14px;
+    padding: 10px;
+    font-weight: 500;
+}
+
+.footer {
+    height: 50vh;
+    background-color: #333;
+    color: white;
+    text-align: left;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 8rem;
+}
+
+.footer ul li a {
+    color: white;
+    line-height: 2rem;
+}
+
+.search-bar2 {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    width: 350px;
+    box-shadow: 1px 1px 15px rgb(80, 80, 80);
+    background: none;
+    margin-top: 1.5rem;
+}
+
+.search-bar2 input {
+    height: 100%;
+    width: 350px;
+    border: none;
+    outline: none;
+    padding: 0 10px;
+    font-size: 16px;
+    background: #ffc300;
+}
+
+.search-ba2r input::placeholder {
+    color: white;
+}
+
+.search-bar2 #search-icon2 {
+    height: 100%;
+    width: 60px;
+    margin-top: 7px;
+    text-align: center;
+    background: #48cae4;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.social-icons {
+    float: right;
+    margin-top: 1.5rem;
+}
+
+#footer-icons {
+    background-color: white;
+    border-radius: 50%;
+    margin-left: 5px;
+    padding: 2px;
+}
+
+.search-box h2 {
+    margin-left: 14rem;
+}
+
+.search-box p {
+    margin-left: 3rem;
+}
+
+@media screen and (max-width:1140px) {
+    .column {
+        flex-direction: column;
+    }
+}
+
+/* responsive */
+/* @media (max-width:1790px) {
+    header {
+        padding: 18px 6%;
+        
+    }
+  
+} */
+
+
+@media only screen and (max-width: 1170px) {
+    :root {
+        --h1-font: 3rem;
+        --h2-font: 2rem;
+        --p-font: 16px;
+    }
+
+    #menu-icon {
+        display: block;
+    }
+
+    .logo span {
+        font-size: 18px;
+    }
+
+    .navbar a {
+        padding: 5rem;
+        font-size: 18px;
+    }
+
+    .navbar {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 270px;
+        height: 22vh;
+        top: 100%;
+        right: -100%;
+        background: #ff9900;
+        padding: 30px 30px;
+        gap: 2rem;
+        text-align: center;
+        transition: all 0.5s ease;
+    }
+
+    .navbar.view {
+        right: 0;
+    }
+
+}
+
+@media screen and (max-width:1140px) {
+    .column-2 {
+        flex-direction: column;
+    }
+
+    .home {
+        width: 110%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .home-text,
+    .home-img {
+        flex: 1;
+    }
+
+    .home-text {
+        order: 2;
+        text-align: left;
+        padding: 40px;
+    }
+
+    .home-img {
+        padding: 40px;
+        text-align: right;
+    }
+
+    .section-2 {
+        width: 110%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section-3 {
+        width: 109vw;
+        height: 160vh;
+
+    }
+
+    .section-3 .column {
+        display: flex;
+        flex-direction: column;
+        height: 130vh;
+    }
+
+    .column {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section-4 {
+        width: 109vw;
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section-5 {
+        width: 109vw;
+        height: 160vh;
+    }
+
+    .section-6 {
+        width: 109vw;
+        margin-top: 5rem;
+    }
+
+    .section-7 {
+        width: 109vw;
+        margin-top: 65rem;
+    }
+
+    .statics {
+        column-gap: 80px;
+        padding: 12rem 8%;
+    }
+
+    .section-7 {
+        background: no-repeat url(https://www.banfield.com/-/media/Project/Banfield/Main/en/general/Callout/Feature/Banfield-pet-hospital.jpg);
+        position: relative;
+    }
+
+    .section-8 {
+        width: 109vw;
+        margin-top: 5rem;
+    }
+
+    .footer {
+        width: 109vw;
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+        text-align: center;
+        margin-top: 65rem;
+        height: 65vh;
+        padding: 10px;
+    }
+    .search-bar2{
+        margin-left: 15rem;
+    }
+    .social-icons{
+        float: none;
+    }
+    .search-box h2{
+        margin-left: 0%;
+    }
+    .search-box p{
+        margin-left: 0%;
+    }
+}
+
+
+/* @media screen and (max-width: 1170px) {
+    .home {
+        width: 110%;
+        display: flex;
+      flex-direction: column;
+    }
+  
+    .home-text,
+    .home-img {
+      flex: 1;
+    }
+  
+    .home-text {
+        order: 2;
+      text-align: left;
+      padding: 40px;
+    }
+  
+    .home-img {
+      padding: 40px;
+      text-align: right;
+    }
+    .section-2{
+        display: flex;
+        flex-direction: column;
+    }
+    .section-3{
+        height: 100vh;
+
+    }
+    .section-3 .column{
+        display: flex;
+        flex-direction: column;
+    }
+  } */
